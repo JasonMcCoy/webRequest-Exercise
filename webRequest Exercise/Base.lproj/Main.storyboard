@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11163.2" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11133"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="webRequest_Exercise" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +18,53 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EBi-Rh-ouX">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x4O-lC-lLp">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="83" id="Rfr-hY-RdA"/>
+                                    <constraint firstAttribute="height" constant="30" id="mTX-1E-jF1"/>
+                                </constraints>
+                                <state key="normal" title="My Portfolio"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FUv-bQ-quZ">
+                                <frame key="frameInset" minX="159" minY="629" width="56" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="56" id="WAm-j7-SVB"/>
+                                    <constraint firstAttribute="height" constant="30" id="fkF-8p-QyA"/>
+                                </constraints>
+                                <state key="normal" title="My Blog"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z6P-rc-tRK">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="83" id="C05-5s-bTp"/>
+                                    <constraint firstAttribute="height" constant="30" id="JNc-Mq-nEM"/>
+                                </constraints>
+                                <state key="normal" title="Prank Video"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="EBi-Rh-ouX" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="8tR-Vv-BBn"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="x4O-lC-lLp" secondAttribute="bottom" constant="8" id="LGz-kc-sWZ"/>
+                            <constraint firstItem="Z6P-rc-tRK" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="LSa-Id-qCm"/>
+                            <constraint firstItem="EBi-Rh-ouX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="QWa-Ph-gIL"/>
+                            <constraint firstItem="x4O-lC-lLp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="RCm-GZ-ykV"/>
+                            <constraint firstItem="Z6P-rc-tRK" firstAttribute="top" secondItem="EBi-Rh-ouX" secondAttribute="bottom" constant="8" id="TeK-pO-haU"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Z6P-rc-tRK" secondAttribute="bottom" constant="8" id="UYV-AM-pEM"/>
+                            <constraint firstAttribute="trailing" secondItem="EBi-Rh-ouX" secondAttribute="trailing" id="Xzb-qk-IJq"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="FUv-bQ-quZ" secondAttribute="bottom" constant="8" id="cT6-Jv-dGB"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="container" destination="EBi-Rh-ouX" id="0Cv-2H-80f"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
         </scene>
     </scenes>
 </document>

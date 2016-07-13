@@ -7,12 +7,28 @@
 //
 
 import UIKit
+import WebKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var container: UIView!
+    
+    var webView: WKWebView!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        webView = WKWebView()
+        container.addSubview(webView)
+        
+        let frame = CGRect(x: 0, y: 0, width: container.bounds.width, height: container.bounds.height)
+        webView.frame = frame
+        
+        let urlStr = ""
+        let url = URL(string: urlStr)
+        let request = NSURLRequest(URL: url)
+        
     }
 
     override func didReceiveMemoryWarning() {
