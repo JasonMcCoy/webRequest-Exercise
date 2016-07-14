@@ -28,14 +28,19 @@
                                     <constraint firstAttribute="height" constant="30" id="mTX-1E-jF1"/>
                                 </constraints>
                                 <state key="normal" title="My Portfolio"/>
+                                <connections>
+                                    <action selector="loadPortfolio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fS6-4E-vaA"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FUv-bQ-quZ">
-                                <frame key="frameInset" minX="159" minY="629" width="56" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FUv-bQ-quZ">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="56" id="WAm-j7-SVB"/>
                                     <constraint firstAttribute="height" constant="30" id="fkF-8p-QyA"/>
                                 </constraints>
                                 <state key="normal" title="My Blog"/>
+                                <connections>
+                                    <action selector="loadMyBlog:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TL2-W5-S6d"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z6P-rc-tRK">
                                 <constraints>
@@ -43,6 +48,9 @@
                                     <constraint firstAttribute="height" constant="30" id="JNc-Mq-nEM"/>
                                 </constraints>
                                 <state key="normal" title="Prank Video"/>
+                                <connections>
+                                    <action selector="loadPrankVideo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0PU-OW-9oN"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -55,6 +63,7 @@
                             <constraint firstItem="Z6P-rc-tRK" firstAttribute="top" secondItem="EBi-Rh-ouX" secondAttribute="bottom" constant="8" id="TeK-pO-haU"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Z6P-rc-tRK" secondAttribute="bottom" constant="8" id="UYV-AM-pEM"/>
                             <constraint firstAttribute="trailing" secondItem="EBi-Rh-ouX" secondAttribute="trailing" id="Xzb-qk-IJq"/>
+                            <constraint firstItem="FUv-bQ-quZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bkq-sO-yeY"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="FUv-bQ-quZ" secondAttribute="bottom" constant="8" id="cT6-Jv-dGB"/>
                         </constraints>
                     </view>
