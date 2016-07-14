@@ -27,7 +27,7 @@ class ViewController: UIViewController {
         
         let urlStr = ""
         let url = URL(string: urlStr)
-        let request = NSURLRequest(URL: url)
+        let request = NSURLRequest(url: url!)
         
     }
 
